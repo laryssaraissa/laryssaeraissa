@@ -1,20 +1,40 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+
+import {View, Text, TextInput, StyleSheet} from 'react-native';
+
+import TelaLogin from './src/TelaLogin';
+
+ 
 
 export default function App() {
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+
+    <View style={{height: '00%'}}>
+
+      <TelaLogin></TelaLogin>
+
     </View>
+
   );
+
 }
 
+
 const styles = StyleSheet.create({
+
   container: {
+
     flex: 1,
+
     backgroundColor: '#fff',
+
     alignItems: 'center',
+
     justifyContent: 'center',
+
   },
+
 });
+
+ 
