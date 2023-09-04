@@ -1,40 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from "expo-status-bar";
+import react from 'react';
+import { SafeAreaView,StyleSheet } from "react-native";
 
-import {View, Text, TextInput, StyleSheet} from 'react-native';
+import LoginScreen from './src/LoginScreen';
 
-import TelaLogin from './src/TelaLogin';
-
- 
-
-export default function App() {
-
-  return (
-
-    <View style={{height: '00%'}}>
-
-      <TelaLogin></TelaLogin>
-
-    </View>
-
+const App = () => {
+  return(
+    <SafeAreaView>
+      <LoginScreen/>
+    </SafeAreaView>
   );
-
-}
-
-
-const styles = StyleSheet.create({
-
+};
+const style = StyleSheet.create({
   container: {
-
-    flex: 1,
-
-    backgroundColor: '#fff',
-
-    alignItems: 'center',
-
-    justifyContent: 'center',
-
+    flex: 1
   },
-
 });
-
- 
